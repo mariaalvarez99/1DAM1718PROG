@@ -81,13 +81,14 @@ public class Lienzo extends JPanel {
 		AffineTransform af;
 		
 //		((Graphics2D) g).scale(0.5, 0.5);
-		
+//		Para la rotacion		
 //		for (int i=0; i<12; i++) {
 //			((Graphics2D) g).rotate(Math.PI / 6, getWidth() / 2, getHeight() / 2);
 //			g.setColor(Color.BLACK);
 //			g.drawString(texto, x, y);
 //			drawLines(g, fm, y);
-//		}	
+//		}
+//		Otra forma
 //		for (double a=0; a<=Math.PI * 2; a+=Math.PI / 9) {
 //			af = ((Graphics2D) g).getTransform();
 //			((Graphics2D) g).rotate(Math.PI / 6, getWidth() / 2, getHeight() / 2);

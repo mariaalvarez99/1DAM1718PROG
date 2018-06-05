@@ -19,10 +19,10 @@ public class Frame extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		getContentPane().add(lienzo = new Lienzo(500, 500));
 		pack();
-		Action izda = new AbstractAction() {
+		Action izda = new AbstractAction("izda") {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				lienzo.getInputMethodRequests();
+				lienzo.setIzda(ItemEvent.SELECTED);
 			}
 		};
 		KeyStroke key = KeyStroke.getKeyStroke(KeyEvent.VK_LEFT, 0);
@@ -31,7 +31,7 @@ public class Frame extends JFrame {
 		Action dcha = new AbstractAction() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-					
+				lienzo.setDcha(ItemEvent.SELECTED);
 			}
 		};
 		key = KeyStroke.getKeyStroke(KeyEvent.VK_RIGHT, 0);
